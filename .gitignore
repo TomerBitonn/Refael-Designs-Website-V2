@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# Flask env config
+instance/
+*.db
+*.sqlite3
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Compiled HTML/Temp files
+*.bak
+*.swp
+*.tmp
+
+# Node modules (if used)
+node_modules/
+
+# Secrets and credentials
+*.env

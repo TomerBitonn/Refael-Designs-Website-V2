@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-35XNLJ27WM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-35XNLJ27WM');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רפאל עיצובים - תקנון והצהרת נגישות</title>
+
+    <!-- UserWay Accessibility -->
+    <script src="https://cdn.userway.org/widget.js" data-account="EbVBBBxKq3"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='imgs/icons/favicon.ico') }}">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/webfonts/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/terms.css') }}">
+
+    <!-- JS Files -->
+    <script src="{{ url_for('static', filename='js/index.js') }}" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "רפאל עיצובים",
+          "url": "https://refael-d.co.il",
+          "logo": "https://refael-d.co.il/static/img/icons/favicon.ico"
+        }
+    </script>  
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "רפאל עיצובים",
+          "alternateName": "Refael Designs",
+          "url": "https://refael-d.co.il"
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="תפריט נפתח">
+            <span></span><span></span><span></span>
+        </button>
+
+        <a href="tel:089430929" class="phone-button">
+            <i class="fas fa-phone"></i>
+            08-9430929
+        </a>
+
+        <div class="logo-wrapper">
+            <a href="{{ url_for('home') }}" class="logo">
+                <img src="{{ url_for('static', filename='imgs/icons/refael_design_logo.webp') }}" alt="לוגו רפאל" class="logo-img" />
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">דף הבית</a></li>
+                <!-- Gallery Dropdown -->
+                <li class="dropdown">
+                    <a href="#" id="galleryDropdown">
+                        גלריה <i class="fas fa-angle-down" id="dropdownarrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="{{ url_for('home') }}#home-gallery">פרויקטים נבחרים</a></li>
+                    <li><a href="{{ url_for('gallery') }}#kitchen-gallery">מטבחים</a></li>
+                    <li><a href="{{ url_for('gallery') }}#bathroom-closet-gallery">ארונות אמבטיה</a></li>
+                    <li><a href="{{ url_for('gallery') }}#wall-cover-gallery">חיפויי קיר</a></li>
+                    <li><a href="{{ url_for('gallery') }}">כל הפרויקטים</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('home') }}#about">אודות</a></li>
+                <li><a href="#contact-form">צרו קשר</a></li>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/RefaelB.design" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/refael_design" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:refaelb58@gmail.com" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Terms and Conditions-->
+     <section class="terms-and-conditions" id="terms-conditions">
+        <div class="container-terms">
+
+            <h1 class="terms-title" id="accessibility-title">הצהרת נגישות</h1>
+            <p>
+               אנחנו ב"רפאל עיצובים" רואים חשיבות רבה בהנגשת האתר שלנו לכלל הציבור.
+
+                האתר עושה שימוש בכלי הנגשה של חברת UserWay, הכולל בין היתר: הגדלת טקסטים, ניגודיות גבוהה, הדגשת קישורים, ריווח טקסטים, הגדלת הסמן של העכבר, הסתרת תמונות, ועוד.
+                <br><br>
+                <strong>נגישות פיזית:</strong>
+                העסק איננו מונגש פיזית בשלב זה.
+                <br>
+                <strong>פנייה בנושא נגישות:</strong>
+                במידה ונתקלתם בקושי בגלישה באתר או באחת מההתאמות - נשמח שתעדכנו אותנו.
+                <br>
+                <strong>דוא"ל לפניות נגישות:</strong> 
+                <a href="mailto:refaelb58@gmail.com">refaelb58@gmail.com</a>
+            </p>
+
+            <h1 class="terms-title">תקנון אתר - רפאל עיצובים</h1>
+
+            <h2 class="terms-subtitle">1. בעלות על האתר</h2>
+            <p>האתר מופעל ומנוהל על ידי רפאל עיצובים, כתובת: האורגים 7, יבנה.
+                <br>
+                טלפון: 
+                <a href="tel:089430929">08-9430929</a>
+                <br>
+                דוא"ל: 
+                <a href="mailto:refaelb58@gmail.com">refaelb58@gmail.com</a>
+            </p>
+
+            <h2 class="terms-subtitle">2. השירותים באתר</h2>
+            <p>
+                האתר מציג שירותים בתחום עיצוב ומכירה של מטבחים, ארונות, חיפויי קיר וריהוט לבית. אין מכירה ישירה דרך האתר, וכל הזמנה או התקשרות נעשית ישירות מול העסק באמצעות טופס יצירת קשר, טלפון או דוא"ל.
+            </p>
+
+            <h2 class="terms-subtitle">3. איסוף מידע ושמירה על פרטיות</h2>
+            <p>
+                בעת פנייה באמצעות האתר נאספים פרטי שם וטלפון בלבד. המידע אינו מועבר לגורם שלישי ואינו משמש לשום מטרה מלבד יצירת קשר חוזר עם הפונה.
+                האתר עושה שימוש ב-Google Analytics לצורך איסוף נתונים סטטיסטיים אנונימיים.
+            </p>
+
+            <h2 class="terms-subtitle">4. קניין רוחני</h2>
+            <p>
+                כל התכנים באתר, לרבות תמונות, טקסטים, עיצובים ואלמנטים גרפיים, מוגנים בזכויות יוצרים ואין להעתיקם או להשתמש בהם ללא אישור בכתב מבעל האתר.
+            </p>
+
+            <h2 class="terms-subtitle">5. הגבלת אחריות</h2>
+            <p>
+                תמונות באתר נועדו להמחשה בלבד. רפאל עיצובים לא יישא באחריות לנזקים ישירים או עקיפים שייגרמו עקב הסתמכות על מידע המופיע באתר.
+            </p>
+
+            <h2 class="terms-subtitle">6. שינויים באתר</h2>
+            <p>
+                רפאל עיצובים שומר לעצמו את הזכות לעדכן, לשנות או להסיר תכנים מהאתר בכל עת וללא הודעה מוקדמת.
+            </p>
+
+
+        </div>
+     </section>
+
+    <!-- Footer -->
+     <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section footer-links">
+                <h3>קישורים</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">דף הבית</a></li>
+                    <li><a href="{{ url_for('gallery') }}#kitchen-gallery">מטבחים</a></li>
+                    <li><a href="{{ url_for('gallery') }}#bathroom-closet-gallery">ארונות אמבטיה</a></li>
+                    <li><a href="{{ url_for('gallery') }}#wall-cover-gallery">חיפויי קיר</a></li>
+                    <li><a href="{{ url_for('gallery') }}">כל הפרויקטים</a></li>
+                    <li><a href="{{ url_for('home') }}#about">אודות</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3>צרו קשר</h3>
+                <p>האורגים 7, יבנה: <a href="tel:089430929">08-9430929</a></p>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" method="post" class="contact-form">
+                        <input type="text" placeholder="שם מלא*" name="name" required>
+                        <input type="tel" placeholder="*טלפון נייד" name="phone" required pattern="^\d{10}$" title="הכנס מספר טלפון בן 10 ספרות" 
+                            maxlength="10" oninput="this.value=this.value.replace(/[^\d]/g,'')">
+                        <textarea name="message" placeholder="הודעה*" required></textarea>
+                        <button class="submit-button" type="submit">לחצו לשליחה</button>
+                    </form>
+                </div>
+
+                <div class="form-status">
+                    <p id="submitSuccessMessage" class="hidden text-success">ההודעה נשלחה בהצלחה!</p>
+                    <p id="submitErrorMessage" class="hidden text-danger">ההודעה לא נשלחה. נסה שוב.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section footer-terms-credits">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/tomerbiton">פותח ע"י תומר ביטון&copy;</a></li>
+                    <li><a href="{{ url_for('terms') }}">תקנון אתר והצהרת נגישות</a></li>
+                </ul>
+        </div>
+     </footer>
+
+     <!-- Back to Top Button -->
+     <button id="backToTop" title="חזרה למעלה"><i class="fa-solid fa-arrow-up"></i></button>
+    
+</body>
+</html>

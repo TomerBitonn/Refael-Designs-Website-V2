@@ -1,0 +1,62 @@
+:root {
+  --main-color: #2C2C2C;       
+  --hover-color: #A67B5B;    
+  --footer-color: #e7e2d3;     
+  --accent-color: #cebcab;  
+  --bg-color: #f9f9f9;         
+  --text-color-b: #000000;
+  --text-color-w: #ffffff;       
+  --muted-color: #999999;  
+  --form-bg: #e7e2de;   
+
+  --font-family-base: 'Heebo', sans-serif;
+  --font-size-base: 16px;
+  --font-size-title: 32px;
+  --font-size-subtitle: 24px;
+  --font-size-mid: 20px;
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  --border-radius: 6px;
+  --transition-fast: 0.3s ease;
+
+  --navbar-height: 80px;
+  --nav-links-margin: -10px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100%;
+}
+
+/* -----Terms and Conditions*/
+
+.terms-and-conditions {
+    padding-top: var(--navbar-height);
+    position: relative;
+    background-color: var(--bg-color);
+    font-family: var(--font-family-base);
+}
+
+.container-terms {
+    padding: 1rem 1rem;
+}
+
+.terms-title {
+    margin-top: 2rem;
+    font-size: var(--font-size-title);
+    text-align: center;
+}
+
+.terms-subtitle {
+    font-size: var(--font-size-subtitle);
+}
+
+.container-terms p {
+    font-size: var(--font-size-mid);
+}
