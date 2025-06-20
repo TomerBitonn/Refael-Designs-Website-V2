@@ -1,6 +1,4 @@
-# 🛠️ Refael Designs Website
-
-[**האתר באוויר ↗**](https://refael-d.co.il)
+# 🛠️ Refael Designs Website - [**האתר באוויר ↗**](https://refael-d.co.il)
 
 This is a business website developed for **Refael Designs**, a professional carpentry and furniture business.  
 The website showcases the company's work, includes a gallery, contact form, and is optimized for SEO and accessibility.
