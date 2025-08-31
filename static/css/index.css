@@ -142,7 +142,7 @@ body, html {
     color: var(--text-color-b);
     white-space: pre-line;
     font-family: var(--font-family-base);
-    font-size: 1.1rem;
+    font-size: var(--font-size-mid);
 }
 
 .projects-grid {
@@ -321,7 +321,7 @@ body, html {
 }
 
 .about-text {
-    font-size: 1.1rem;
+    font-size: var(--font-size-mid);
     line-height: 1.8;
     color: var(--text-color-b);
     white-space: pre-line;
