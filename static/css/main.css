@@ -405,6 +405,7 @@ body, html {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  font-family: var(--font-family-base);
 }
 
 @media (max-width: 768px) {
@@ -448,11 +449,13 @@ body, html {
 }
 
 .text-success {
+  text-align: center;
   color: green;
   font-family: var(--font-family-base);
 }
 
 .text-danger {
+  text-align: center;
   color: red;
   font-family: var(--font-family-base);
 }
