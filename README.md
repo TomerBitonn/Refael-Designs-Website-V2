@@ -40,6 +40,7 @@ flowchart LR
     A[Client Browser] --> B[Nginx (SSL + Reverse Proxy)]
     B --> C[Gunicorn (WSGI Server)]
     C --> D[Flask App]
+```
 
 ---
 
