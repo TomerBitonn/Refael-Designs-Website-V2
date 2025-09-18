@@ -37,9 +37,9 @@ This diagram shows how requests are handled in production:
 
 ```mermaid
 flowchart LR
-    A[👤 Client Browser] --> B[🌐 Nginx (SSL + Reverse Proxy)]
-    B --> C[🔥 Gunicorn (WSGI Server)]
-    C --> D[🐍 Flask App]
+    A[Client Browser] --> B[Nginx (SSL + Reverse Proxy)]
+    B --> C[Gunicorn (WSGI Server)]
+    C --> D[Flask App]
 
 ---
 
