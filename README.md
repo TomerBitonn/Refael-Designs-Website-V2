@@ -36,14 +36,18 @@ The website showcases the company's work, includes a gallery, contact form, and 
 Refael-Design-Website/
 │
 ├── static/
-│ ├── css/ → Custom stylesheets
-│ ├── js/ → JavaScript functions
-│ └── imgs/ → Website and gallery images
+│   ├── css/ → Custom stylesheets
+│   ├── js/ → JavaScript functions
+│   └── imgs/ → Website and gallery images
 │
 ├── templates/
-│ ├── index.html → Homepage
-│ ├── gallery.html → Gallery section
-│ └── terms.html → Terms & accessibility info
+│   ├── index.html → Homepage
+│   ├── gallery.html → Gallery section
+│   └── terms.html → Terms & accessibility info
+│
+├── deploy/ → Example deployment configs (not part of the actual website)
+│   ├── service.example → systemd service example
+│   └── nginx.conf.example → Nginx server block example
 │
 ├── server.py → Flask server for routing and form handling
 ├── .gitignore
