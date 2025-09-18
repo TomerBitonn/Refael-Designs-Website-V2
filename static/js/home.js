@@ -25,6 +25,13 @@ prevBtn.addEventListener('click', () => {
 
 /* -----Gallery Modal----- */
 
+// Clears any active text selection (iPadOS Chrome/Safari modal fix) by removing all selection ranges
+//  so the page doesn’t appear highlighted after opening/closing the modal.
+function clearSelection() {
+    const sel = window.getSelection ? window.getSelection() : null;
+    if (sel && sel.removeAllRanges) sel.removeAllRanges();
+}
+
 // open modal
 function openModal(element) {
     const title = element.dataset.title;
@@ -46,11 +53,13 @@ function openModal(element) {
 
     document.getElementById('project-modal').style.display = 'block';
     document.getElementById('project-modal').scrollTop = 0;
+    requestAnimationFrame(clearSelection);
 }
 
 // close modal
 function closeModal() {
     document.getElementById('project-modal').style.display = 'none';
+    requestAnimationFrame(clearSelection);
 }
 
 const modal = document.getElementById('project-modal');
