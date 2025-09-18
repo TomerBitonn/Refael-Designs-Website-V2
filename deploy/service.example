@@ -1,1 +1,14 @@
+[Unit]
+Description=Gunicorn service for <PROJECT_NAME> Flask app
+After=network.target
 
+[Service]
+User=<LINUX_USER>
+Group=www-data
+WorkingDirectory=/home/<LINUX_USER>/<PROJECT_DIR>
+Environment="PATH=/home/<LINUX_USER>/<PROJECT_DIR>/venv/bin"
+ExecStart=/home/<LINUX_USER>/<PROJECT_DIR>/venv/bin/gunicorn --workers 3 --bind 127.0.0.1:<PORT> <MODULE>:<APP>
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
