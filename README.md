@@ -77,4 +77,12 @@ This repository also includes **example configuration files** for deploying the 
   - Domain name (`refael-d.co.il`)  
   - Ports (e.g., `8000`)  
   - Python environment (virtualenv)  
-- SSL certificates (`/etc/letsencrypt/...`) are generated uniquely per server/domain and must be obtained separately.  
+- SSL certificates (`/etc/letsencrypt/...`) are generated uniquely per server/domain and must be obtained separately.
+
+---
+
+flowchart LR
+    A[👤 Client Browser] --> B[🌐 Nginx (SSL + Reverse Proxy)]
+    B --> C[🔥 Gunicorn (WSGI Server)]
+    C --> D[🐍 Flask App]
+
