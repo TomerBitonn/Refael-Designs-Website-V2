@@ -31,6 +31,18 @@ The website showcases the company's work, includes a gallery, contact form, and 
 
 ---
 
+## 🔄 Request Flow
+
+This diagram shows how requests are handled in production:
+
+```mermaid
+flowchart LR
+    A[👤 Client Browser] --> B[🌐 Nginx (SSL + Reverse Proxy)]
+    B --> C[🔥 Gunicorn (WSGI Server)]
+    C --> D[🐍 Flask App]
+
+---
+
 ## 📂 Project Structure
 ```
 Refael-Design-Website/
@@ -78,11 +90,3 @@ This repository also includes **example configuration files** for deploying the 
   - Ports (e.g., `8000`)  
   - Python environment (virtualenv)  
 - SSL certificates (`/etc/letsencrypt/...`) are generated uniquely per server/domain and must be obtained separately.
-
----
-
-flowchart LR
-    A[👤 Client Browser] --> B[🌐 Nginx (SSL + Reverse Proxy)]
-    B --> C[🔥 Gunicorn (WSGI Server)]
-    C --> D[🐍 Flask App]
-
