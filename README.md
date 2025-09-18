@@ -56,3 +56,21 @@ Refael-Design-Website/
 ![Home-Page Gallery Screenshot](static/imgs/website-v2%20screenshots/home-gallery.png)
 ![Gallery-Page Screenshot](static/imgs/website-v2%20screenshots/gallery.png)
 ![Contact-Form Screenshot](static/imgs/website-v2%20screenshots/contact.png)
+
+---
+
+## ⚙️ Deployment Configuration (Examples)
+
+This repository also includes **example configuration files** for deploying the website in production using **Gunicorn** and **Nginx**.
+
+- `deploy/service.example` → Example **systemd service file** for running the Flask app with Gunicorn.  
+- `deploy/nginx.conf.example` → Example **Nginx server block** for reverse proxy + SSL (Let's Encrypt).  
+
+⚠️ **Important Notes**:  
+- These files are **examples only** and are not the actual configuration used on the production server.  
+- Before using them, update the following parameters according to your setup:  
+  - Paths (`/home/ubuntu/...`)  
+  - Domain name (`refael-d.co.il`)  
+  - Ports (e.g., `8000`)  
+  - Python environment (virtualenv)  
+- SSL certificates (`/etc/letsencrypt/...`) are generated uniquely per server/domain and must be obtained separately.  
