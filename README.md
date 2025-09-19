@@ -46,7 +46,7 @@ flowchart LR
 
 ## 📂 Project Structure
 ```
-Refael-Design-Website/
+Refael-Designs-Website/
 │
 ├── static/
 │   ├── css/ → Custom stylesheets
