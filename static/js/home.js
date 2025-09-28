@@ -26,7 +26,7 @@ prevBtn.addEventListener('click', () => {
 /* -----Gallery Modal----- */
 
 // Clears any active text selection (iPadOS Chrome/Safari modal fix) by removing all selection ranges
-//  so the page doesn’t appear highlighted after opening/closing the modal.
+// so the page doesn’t appear highlighted after opening/closing the modal.
 function clearSelection() {
     const sel = window.getSelection ? window.getSelection() : null;
     if (sel && sel.removeAllRanges) sel.removeAllRanges();

@@ -36,3 +36,6 @@ node_modules/
 
 # Secrets and credentials
 *.env
+
+# Backup code folder
+backup-code.tar.gz
