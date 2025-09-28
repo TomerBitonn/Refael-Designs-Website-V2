@@ -45,8 +45,8 @@ This diagram shows how requests and deployments are handled in production:
 ```
 
 ### Deploy Flow
-```
-    subgraph Deploy[CI/CD Pipeline]
+```mermaid
+    flowchart LR
     E[GitHub Repo] --> F[GitHub Actions: CI/CD Workflow]
     F --> G[EC2 Server: git pull + restart service]
     end
