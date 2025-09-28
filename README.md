@@ -20,7 +20,7 @@ The website showcases the company's work, includes a gallery, contact form, and 
 | Area            | Tech Used                               |
 |-----------------|-----------------------------------------|
 | Structure       | HTML5                                   |
-| Styling         | CSS3    |
+| Styling         | CSS3                                    |
 | Interactivity   | JavaScript                              |
 | Backend         | Python with Flask                       |
 | Hosting         | AWS EC2                                 |
@@ -83,7 +83,7 @@ This repository also includes **example configuration files** for deploying the 
 - `deploy/service.example` → Example **systemd service file** for running the Flask app with Gunicorn.  
 - `deploy/nginx.conf.example` → Example **Nginx server block** for reverse proxy + SSL (Let's Encrypt).  
 
-⚠️ **Important Notes**:  
+**Important Notes**:  
 - These files are **examples only** and are not the actual configuration used on the production server.  
 - Before using them, update the following parameters according to your setup:  
   - Paths (`/home/ubuntu/...`)  
