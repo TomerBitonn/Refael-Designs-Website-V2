@@ -34,7 +34,7 @@ The website showcases the company's work, includes a gallery, contact form, and 
 
 ## 🔄 Request & Deployment Flow
 
-This diagram shows how requests and deployments are handled in production:
+This diagrams shows how requests and deployments are handled in production:
 
 ### Request Flow
 ```mermaid
