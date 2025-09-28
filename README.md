@@ -1,4 +1,4 @@
-# 🛠️ Refael Designs Website - [**האתר באוויר ↗**](https://refael-d.co.il)
+# 🛠️ Refael Designs Website - [**Live Website/האתר באוויר**](https://refael-d.co.il)
 
 This is a business website developed for **Refael Designs**, a professional carpentry and furniture business.  
 The website showcases the company's work, includes a gallery, contact form, and is optimized for SEO and accessibility.
@@ -28,18 +28,28 @@ The website showcases the company's work, includes a gallery, contact form, and 
 | Reverse Proxy   | Nginx                                   |
 | SSL             | Let's Encrypt                           |
 | Forms           | Formspree API                           |
+| CI/CD           | GitHub Actions (auto-deploy to EC2)     |
 
 ---
 
-## 🔄 Request Flow
+## 🔄 Request & Deployment Flow
 
-This diagram shows how requests are handled in production:
+This diagram shows how requests and deployments are handled in production:
 
+### Request Flow
 ```mermaid
-flowchart LR
+    flowchart LR
     A[Client Browser] --> B[Nginx: SSL and Reverse Proxy]
     B --> C[Gunicorn: WSGI Server]
     C --> D[Flask App]
+```
+
+### Deploy Flow
+```
+    subgraph Deploy[CI/CD Pipeline]
+    E[GitHub Repo] --> F[GitHub Actions: CI/CD Workflow]
+    F --> G[EC2 Server: git pull + restart service]
+    end
 ```
 
 ---
@@ -63,6 +73,7 @@ Refael-Designs-Website/
 │   └── nginx.conf.example → Nginx server block example
 │
 ├── server.py → Flask server for routing and form handling
+├── .github/workflows/deploy_to_website.yml → GitHub Actions workflow for CI/CD
 ├── .gitignore
 └── .env → Environment variables (e.g., Formspree URL)
 ```
@@ -78,13 +89,19 @@ Refael-Designs-Website/
 
 ## ⚙️ Deployment Configuration (Examples)
 
-This repository also includes **example configuration files** for deploying the website in production using **Gunicorn** and **Nginx**.
+This repository includes both example configuration files and a production-ready CI/CD workflow:
 
 - `deploy/service.example` → Example **systemd service file** for running the Flask app with Gunicorn.  
 - `deploy/nginx.conf.example` → Example **Nginx server block** for reverse proxy + SSL (Let's Encrypt).  
+- `.github/workflows/deploy_to_website.yml` → GitHub Actions workflow that automates deployment:
+  - On every push to main, GitHub connects to the EC2 server via SSH.
+  - Pulls the latest code from GitHub.
+  - Installs dependencies.
+  - Restarts the Flask/Gunicorn service.
 
 **Important Notes**:  
-- These files are **examples only** and are not the actual configuration used on the production server.  
+- Example files under `/deploy` are templates only. 
+- Production CI/CD (`deploy_to_website.yml`) is actively used and maintained.
 - Before using them, update the following parameters according to your setup:  
   - Paths (`/home/ubuntu/...`)  
   - Domain name (`refael-d.co.il`)  
