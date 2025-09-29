@@ -146,6 +146,13 @@ body, html {
     flex-direction: column;
 }
 
+.icon {
+  width: 32px;
+  height:32px;
+  color: var(--accent-color);
+  display: flex;
+}
+
 .social-icons {
   position: absolute;
   left: 20px;
